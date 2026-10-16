@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "season": 2027,
+  "competition": "RMUC",
+  "audited_on": "2026-10-16",
+  "official_rule_version": "1.0.0",
+  "official_rule_release_date": "2026-10-15",
+  "description_zh": "正式规则核对；未知值为null，不得按零值或默认有效攻击阈值使用。静态地图就绪不代表完成训练或实机部署。",
+  "sources": {
+    "official_rules_page": "https://bbs.robomaster.com/wiki/20204847/1969149",
+    "official_cad_article": "https://bbs.robomaster.com/article/1970956?source=11",
+    "rule_manual": {
+      "url": "https://hz-rm-bbs-web-prod.oss-cn-hangzhou.aliyuncs.com/451e5737ba5d4463909a3013456a4e551792055647969/RoboMaster%202027%20机甲大师超级对抗赛比赛规则手册V1.0.0（20261015）.pdf",
+      "local_path": "source/rmuc2027_rule_manual_v1.0.0_20261015.pdf",
+      "size_bytes": 22455861,
+      "official_md5": "4ff71c2945d578c444ae5b9620e43dfb",
+      "sha256": "9e2eed9295536c6fd547b62d634df1d5e70a2e1e2250e5dff3521d557e5d54be"
+    },
+    "robot_specification": {
+      "url": "https://hz-rm-bbs-web-prod.oss-cn-hangzhou.aliyuncs.com/fe96f58dd62543caa97436a233ec3aab1792048283121/RoboMaster%202027%20机甲大师高校系列赛机器人制作规范手册V1.0.0（20261015）.pdf",
+      "local_path": "source/rmu2027_robot_specification_v1.0.0_20261015.pdf",
+      "size_bytes": 18240763,
+      "official_md5": "39175fdc1c263b10ec44727c5689c329",
+      "sha256": "3287fe5f521f8801ce69632032ea17a9c8d8a099091558f58618cd7721154a3c"
+    },
+    "official_step": {
+      "url": "https://hz-rm-bbs-web-prod.oss-cn-hangzhou.aliyuncs.com/080ae7230f6c469c9bec9d2c892797b61791994813953/RMUC2027_V1.0.0.stp",
+      "declared_size_bytes": 653443279,
+      "declared_md5": "3d3d6a411f44e9a4983794261b3f0bf7",
+      "cad_is_reference_only": true,
+      "priority_zh": "冲突时以官方规则手册和现场场地为准",
+      "article_license": "CC-BY-NC-SA-4.0"
+    }
+  },
+  "page_numbering": {
+    "references_use": "printed_page",
+    "pdf_page_number_offset": 1
+  },
+  "field": {
+    "length_m": 28.0,
+    "width_m": 15.0,
+    "printed_pages": [
+      29,
+      32,
+      33
+    ],
+    "centrally_symmetric": true,
+    "coordinate_origin_m": [
+      0,
+      0,
+      0
+    ],
+    "coordinate_axes": "native CAD xyz converted mm to m, Z-up",
+    "red_blue_coordinate_mapping": null,
+    "coordinate_status": "native_cad_verified; competition_rectangle_derived_from_symmetry_and_rule_dimensions",
+    "perimeter_wall_top_height_above_field_m": 2.4,
+    "wall_height_is_flight_ceiling": false,
+    "official_flight_ceiling_m": null,
+    "horizontal_out_of_bounds_forbidden": true,
+    "out_of_bounds_rule": "R48",
+    "boundary_check_uses_full_vehicle_envelope": true,
+    "ground_slope_degrees": [
+      1.0,
+      2.0
+    ],
+    "ground_slope_description_zh": "以战场长中轴为轴向长边两侧倾斜；简化为平地须明确标注",
+    "changes_from_2026_zh": [
+      "飞坡改隧道",
+      "新增制高点",
+      "新增机库平台",
+      "新增工作台",
+      "取消飞行区",
+      "取消无线充电装置放置区",
+      "取消停机坪"
+    ],
+    "provisional_rectangle_xy_m": [
+      [
+        -14.0,
+        -5.8756566
+      ],
+      [
+        14.0,
+        9.1243434
+      ]
+    ],
+    "rectangle_derivation_zh": "规则28×15m，按CAD中心对称中心(0,1.6243434)对齐推导；不是官方给出的CAD绝对坐标，待现场/图纸细节复核。底板28×16.003m不能用作合法飞行边界。",
+    "perimeter_collision_in_official_cad": false,
+    "perimeter_thickness_m": null,
+    "perimeter_openings": null,
+    "perimeter_user_choice": "official_cad_only_with_out_of_bounds_failure",
+    "perimeter_collision_supplement_enabled": false
+  },
+  "courses": {
+    "user_confirmed_separate_courses": true,
+    "target_types": [
+      "enemy_base_armor",
+      "enemy_outpost_middle_armor"
+    ],
+    "previous_standalone_board_is_official_target": false,
+    "enemy_base_armor": {
+      "name_zh": "敌方基地装甲课程",
+      "target_module": "base_armor",
+      "armor_module_count": 6,
+      "printed_pages": [
+        37,
+        38,
+        65
+      ],
+      "nominal_damage_without_buffs": 200,
+      "attack_surface_dimensions_m": null,
+      "attack_surface_poses": null,
+      "armor_open_closed_state": null,
+      "geometry_source": "official_cad_and_rule_figures",
+      "exclude_dart_detection_module": true,
+      "status": "target_geometry_pending_conversion_verification"
+    },
+    "enemy_outpost_middle_armor": {
+      "name_zh": "敌方前哨站中部装甲课程",
+      "target_module": "outpost_middle_armor",
+      "armor_module_count": 3,
+      "azimuth_spacing_deg": 120.0,
+      "figure_assembly_diameter_m": 0.55,
+      "printed_pages": [
+        56,
+        65
+      ],
+      "nominal_damage_without_buffs": 200,
+      "attack_surface_dimensions_m": null,
+      "attack_surface_poses": null,
+      "target_motion": null,
+      "geometry_source": "official_cad_and_rule_figures",
+      "exclude_dart_detection_module": true,
+      "status": "target_geometry_and_motion_pending_verification"
+    }
+  },
+  "official_impact_detection": {
+    "printed_page": 64,
+    "table": "5-1",
+    "contact_duration_limits_s": null,
+    "area_integrated_impulse_limits": null,
+    "event_force_threshold_alpha_n": null,
+    "official_threshold_status": "not_yet_published_in_v1.0.0",
+    "simulation_contact_success_equals_official_damage": false,
+    "description_zh": "官方接触时间及面累积冲量均待定，alpha未给数；旧0.5N研发阈值不能当成官方有效攻击"
+  },
+  "forbidden_attacks": [
+    {
+      "object": "power_rune",
+      "name_zh": "能量机关",
+      "rule": "R62",
+      "printed_page": 134
+    },
+    {
+      "object": "hangar",
+      "name_zh": "机库",
+      "rule": "R62",
+      "printed_page": 134
+    },
+    {
+      "object": "enemy_dart_launcher",
+      "name_zh": "对方飞镖发射架",
+      "rule": "R53",
+      "printed_page": 132
+    },
+    {
+      "object": "enemy_radar",
+      "name_zh": "对方雷达",
+      "rule": "R53",
+      "printed_page": 132
+    }
+  ],
+  "restricted_zones": {
+    "definition_printed_page": 133,
+    "vertical_extent": "ground_and_vertical_space_above",
+    "vehicle_or_carried_object_contact_counts_as_entry": true,
+    "dart_launch_station": {
+      "air_system_explicitly_restricted": true,
+      "applies_to_both_teams": true,
+      "rule": "R64",
+      "printed_page": 134,
+      "polygon_xy_m": null,
+      "status": "polygon_pending_cad_and_figure_verification"
+    },
+    "other_ground_robot_zones": {
+      "names": [
+        "base",
+        "supply",
+        "assembly"
+      ],
+      "air_system_interpretation_confirmed": false,
+      "description_zh": "表7-4给出普遍禁区说明，但R56/R57具体条文写地面机器人；不得自动将全部地面禁区当作已确认空中禁飞区"
+    }
+  },
+  "official_hangar_platform": {
+    "printed_page": 53,
+    "figure": "4-30",
+    "count": 2,
+    "location_description_zh": "中央高地能量机关立柱两侧，红蓝各一",
+    "figure_outer_size_xy_m": [
+      0.4,
+      0.4
+    ],
+    "figure_h_mark_size_xy_m": [
+      0.32,
+      0.32
+    ],
+    "figure_height_dimension_m": 1.2,
+    "figure_thickness_m": 0.04,
+    "world_pose": null,
+    "height_dimension_reference_confirmed": false,
+    "user_hangar_internal_geometry": false
+  },
+  "user_hangar": {
+    "cad_provided": false,
+    "landing_training_paused_pending_cad": true,
+    "top_open": true,
+    "four_side_walls": true,
+    "passive_positioning_slot": true,
+    "internal_dimensions_m": null,
+    "slot_geometry": null,
+    "description_zh": "官方机库平台和收纳尺寸上限不能代替个人机库与定位槽草图"
+  },
+  "airframe_specification": {
+    "printed_pages": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "minimum_hover_duration_s": 10.0,
+    "max_battery_energy_wh": 4.0,
+    "max_working_voltage_v": 30.0,
+    "mass_dimension_formula": {
+      "mass_symbol": "x",
+      "mass_unit": "kg",
+      "max_each_axis_dimension_symbol": "y",
+      "dimension_unit": "mm",
+      "formula": "y=round_half_up((0.3225-x)/0.001225)",
+      "formula_mass_interval_kg": [
+        0.15,
+        0.249
+      ],
+      "below_0_15_kg_dimension_mm": 141,
+      "example_mass_kg": 0.19,
+      "example_max_each_axis_dimension_mm": 108
+    },
+    "hangar_max_stowed_size_m": [
+      0.3,
+      0.3,
+      0.2
+    ],
+    "hangar_max_extended_size_m": [
+      0.6,
+      0.3,
+      0.4
+    ],
+    "current_real_airframe_compliance_verified": false
+  }
+}

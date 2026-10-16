@@ -1,0 +1,8 @@
+本仓库分发的场地三维数据与文档，来源与许可说明：
+
+- 官方场地 CAD（RMUC2027_V1.0.0.stp）、规则手册与机器人规格 PDF：来自 RoboMaster 官方发布，官方公告标注 CC BY-NC-SA 4.0。
+- 由上述 CAD 转换生成的 USD / NPZ 等产物：按相同许可（CC BY-NC-SA 4.0）提供。
+- 署名：RoboMaster 高校赛务（官方原始作者）；转换与整理：keilking66。
+- 许可全文：https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+图纸与规则或现场有差异时，以官方规则和现场为准。
